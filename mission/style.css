@@ -1,57 +1,74 @@
-    body {
-      font-family:"Times New Roman";
-      margin: 0 auto;
-      background-color: #f8f9fa;
-      background: #fff;
-      color: #222;
-      line-height: 1.5;
-      max-width: 600px;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+    /* light theme colors(default) */
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
+  --accent-color: #006EB6;
+  --card-shadow: rgba(0,0,0,0.1);
+}
 
-    header {
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
+/* Dark theme*/
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --accent-color: #4a90e2;
+  --card-shadow: rgba(0,0,0,0.5);
+}
 
-    header h1 {
-      font-size: 2rem;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin: 0;
-    }
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.5;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
 
-    header h2 {
-      font-size: 1rem;
-      font-weight: normal;
-      color: #006EB6;
-      margin: 5px 0 0;
-    }
+header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
 
-    p.intro, em {
-      text-align: justify;
-      margin-bottom: 20px;
-      padding-left: 60px;
-      max-width: 500px;
-    }
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0;
+}
 
-    ol {
-      padding-left: 100px;
-      margin-bottom: 15px;
-      max-width: 400px;
-    }
+header h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--accent-color);
+  margin: 5px 0 0;
+}
 
-    ol li {
-      margin-bottom: 15px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px 10px;
-    }
+p.intro, em {
+  text-align: justify;
+  margin-bottom: 20px;
+  padding-left: 60px;
+  max-width: 500px;
+}
 
-    footer img {
-      max-width: 100px;
-      height: auto;
-    }
+ol {
+  padding-left: 100px;
+  margin-bottom: 15px;
+  max-width: 400px;
+}
+
+ol li {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+footer img {
+  max-width: 100px;
+  height: auto;
+}

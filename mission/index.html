@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<select id="theme-select">
+  <option value="light">Light</option>
+  <option value="dark">Dark</option>
+  <option value="system">System Default</option>
+</select>
  <header>
     <h1>MISSION STATEMENT</h1>
     <h2>BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
@@ -35,8 +40,13 @@
   </main>
 
   <footer>
-    <img src="byui-logo-blue.webp" alt="BYU-Idaho Logo">
-  </footer>
+  <img id="theme-image" 
+      src="byui-logo-blue.webp" 
+      data-light="byui-logo-blue.webp" 
+      data-dark="byui-logo-white.png" 
+      alt="BYUI Logo">
+</footer>
 </main>
+<script src="theme.js"></script>
 </body>
 </html>
