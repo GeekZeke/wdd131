@@ -1,0 +1,134 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #ffffff;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  padding: 1rem 0 0.5rem;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #3b0a0a;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #b22222;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+.header-line {
+  border: 1px solid #e0a899;
+  margin: 0 1rem;
+}
+
+/* === Main === */
+main {
+  padding: 1rem;
+}
+
+.book {
+  border-top: 1px solid #e0a899;
+  padding-top: 1rem;
+  text-align: center;
+  display: block;
+}
+
+.book-info p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.book-details h2 {
+  color: #800000;
+  font-size: 1.1rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.book-details img {
+  width: 120px;
+  display: block;
+  margin: 0.5rem auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.book-details p {
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.author-line {
+  border: 1px solid #e0a899;
+  width: calc(100% - 2rem);
+  margin: 2rem 1rem 0.5rem;
+}
+
+.author {
+  font-style: italic;
+  color: #000;
+  margin: 0 1rem 1rem;
+  text-align: center;
+}
+
+/* === Larger Screens === */
+@media (min-width: 700px) {
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .book {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: left;
+    padding: 1rem 2rem;
+    column-gap: 2rem;
+    position: relative;
+  }
+
+
+  .book::before {
+    content: "";
+    position: absolute;
+    left: 33.5%;
+    top: 1rem;
+    bottom: 4rem;
+    width: 1px;
+    background-color: #e0a899;
+  }
+
+  .book-info {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .book-details img {
+    width: 180px;
+  }
+
+  .book-details h2 {
+    font-size: 1.3rem;
