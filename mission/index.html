@@ -1,18 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD131 Portfolio | Zeke Ellis</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD131 Portfolio | Zeke Ellis</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <header>
+  <!-- theme selector -->
+  <label for="theme-select">Theme:</label>
+  <select id="theme-select">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <option value="system">System Default</option>
+  </select>
+
+  <header>
     <h1>MISSION STATEMENT</h1>
     <h2>BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
   </header>
-<main>
- <p class="intro">
+
+  <main>
+    <p class="intro">
       Brigham Young University–Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. 
       Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
     </p>
@@ -35,8 +44,13 @@
   </main>
 
   <footer>
-  <img src="byui-logo-blue.webp" alt="BYUI Logo">
-</footer>
-</main>
+    <img id="theme-image" 
+         src="byui-logo-blue.webp" 
+         data-light="byui-logo-blue.webp" 
+         data-dark="byui-logo-white.png" 
+         alt="Site Logo">
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
