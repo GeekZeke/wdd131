@@ -8,14 +8,13 @@
   <title>Cool Pics</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
     <h1>Cool Pics <span class="camera">📸</span></h1>
     <nav>
-      <button class="menu-btn">Menu</button>
+      <button class="menu-btn" aria-label="Toggle navigation menu">Menu</button>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
         <li><a href="#">People</a></li>
@@ -29,21 +28,28 @@
   <main>
     <h2>Current Work</h2>
     <section class="gallery">
-      <figure><img src="norris-sm.jpg" alt="Pic 1"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 2"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 3"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 4"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 5"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 6"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 7"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 8"></figure>
-      <figure><img src="norris-sm.jpg" alt="Pic 9"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 1"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 2"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 3"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 4"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 5"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 6"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 7"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 8"></figure>
+      <figure><img src="norris-full.jpg" alt="Pic 9"></figure>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Not a real site 😄</p>
   </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <span class="close" id="modal-close">&times;</span>
+    <img class="modal-content" id="modal-img">
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
