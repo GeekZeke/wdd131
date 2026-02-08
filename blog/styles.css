@@ -7,7 +7,7 @@ body {
   line-height: 1.6;
 }
 
-/* === Header === */
+/*header*/
 header {
   text-align: center;
   padding: 1rem 0 0.5rem;
@@ -45,7 +45,7 @@ nav a:focus {
   margin: 0 1rem;
 }
 
-/* === Main === */
+/*main*/
 main {
   padding: 1rem;
 }
@@ -94,7 +94,7 @@ main {
   text-align: center;
 }
 
-/* === Larger Screens === */
+/*large screens*/
 @media (min-width: 700px) {
   main {
     max-width: 900px;
@@ -132,3 +132,4 @@ main {
 
   .book-details h2 {
     font-size: 1.3rem;
+  }
