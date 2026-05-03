@@ -7,6 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- theme selector -->
+  <label for="theme-select">Theme:</label>
+  <select id="theme-select">
+    <option value="light">Light</option>
+    <option value="dark">Dark</option>
+    <option value="system">System Default</option>
+  </select>
+
   <header>
     <h1>MISSION STATEMENT</h1>
     <h2>BRIGHAM YOUNG UNIVERSITY–IDAHO</h2>
@@ -17,6 +25,7 @@
       Brigham Young University–Idaho was founded and is supported and guided by The Church of Jesus Christ of Latter-day Saints. 
       Its mission is to develop disciples of Jesus Christ who are leaders in their homes, the Church, and their communities.
     </p>
+
     <p><em>The university does this by:</em></p>
     <ol>
       <li>
@@ -33,10 +42,15 @@
       </li>
     </ol>
   </main>
+
   <footer>
-    <img id="byuilogo" 
+    <img id="theme-image" 
          src="byui-logo-blue.webp" 
+         data-light="byui-logo-blue.webp" 
+         data-dark="byui-logo-white.png" 
          alt="Site Logo">
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

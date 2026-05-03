@@ -1,16 +1,29 @@
+/* light theme (default) */
+:root {
+  --bg-color: #fff;
+  --text-color: #222;
+  --accent-color: #006EB6;
+  --card-shadow: rgba(0,0,0,0.1);
+}
 
-
+/* dark theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #f1f1f1;
+  --accent-color: #4a90e2;
+  --card-shadow: rgba(0,0,0,0.5);
+}
 
 body {
   font-family: "Times New Roman", serif;
   margin: 0 auto;
-  background-color: white;
-  color: black;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.5;
   max-width: 600px;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 1px 1px black;
+  box-shadow: 0 4px 12px var(--card-shadow);
   transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
 }
 
@@ -29,7 +42,7 @@ header h1 {
 header h2 {
   font-size: 1rem;
   font-weight: normal;
-  color: #006EB6;
+  color: var(--accent-color);
   margin: 5px 0 0;
 }
 
